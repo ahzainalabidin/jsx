@@ -7,7 +7,15 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 // 3) Create a component
 function App() {
-  return <h1>Hi there!</h1>
+
+  let message = 'Bye there!';
+
+  if (Math.random() > 0.5) {
+    message = 'Hello there!';
+  }
+
+  return (<h1>{message}</h1>);
+
 }
 
 // 4) Show components on the screen
